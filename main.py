@@ -1,3 +1,4 @@
+# importing packages
 import sys
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
@@ -38,6 +39,7 @@ class MainWindow(QMainWindow):
 
         self.browser.urlChanged.connect(self.update_url)
 
+    #setting home url
     def navigate_home(self):
         self.browser.setUrl(QUrl('http://google.com'))
 
@@ -45,10 +47,12 @@ class MainWindow(QMainWindow):
         url = self.url_bar.text()
         self.browser.setUrl(QUrl(url))
 
+    #making sure url gets updated when using navbar
     def update_url(self, q):
         self.url_bar.setText(q.toString())
 
 
+#calling the app to run
 app = QApplication(sys.argv)
 QApplication.setApplicationName('SahooNet')
 window = MainWindow()
