@@ -60,5 +60,5 @@ window = MainWindow()
 app.exec_()
 # window title
 #printing the name on app
-        self.title = "Sahoo Word"
+        self.title = "My Browser"
         self.setWindowTitle(self.title)
