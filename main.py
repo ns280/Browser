@@ -53,7 +53,8 @@ class MainWindow(QMainWindow):
 
 
 #calling the app to run
+#setting a name
 app = QApplication(sys.argv)
-QApplication.setApplicationName('SahooNet')
+QApplication.setApplicationName('My Browser')
 window = MainWindow()
 app.exec_()
