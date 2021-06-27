@@ -58,7 +58,3 @@ app = QApplication(sys.argv)
 QApplication.setApplicationName('My Browser')
 window = MainWindow()
 app.exec_()
-# window title
-#printing the name on app
-        self.title = "My Browser"
-        self.setWindowTitle(self.title)
